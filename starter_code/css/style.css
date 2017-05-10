@@ -8,19 +8,15 @@ Developer @GA in NYC
 
 
 /*### Technical Requirements 
-
 - Use media queries at a 768px breakpoint
 - As a user changes the size of a browser window:
-
   - Content remains in appropriate ```divs```
   - Content remains visible to the user 
   - Fonts change size appropriately 
   - Margins and padding change size appropriately 
   - Content does not overlap 
   - In the blog section, the two-column layout changes to a single-column layout when appropriate 
-
 #### Bonus
-
 - Add different media queries for a 1000px breakpoint and a 480px breakpoint
 - Practice converting fixed units to relative units 
 */
@@ -175,13 +171,15 @@ blockquote span {
   margin-top: 80px;
 }
 #posts {
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   display: inline-block;
   margin-right: 20px;
   vertical-align: top;
 }
 #sidebar {
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
   display: inline-block;
   vertical-align: top;
 }
@@ -350,7 +348,7 @@ header nav.show {
   padding: 15px 15px;
 }
 
-#benefits h3 {
+#benefits h3, .post h2{
   margin-bottom: 10px;
   font-size: 1.2em;
 }
@@ -367,7 +365,30 @@ header nav.show {
   font-size: .8em;
 }
 
+/*///// BLOG /////*/
+
+#sidebar {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
+
+#main {
+  margin-top :20px;
+}
+
+#posts {
+  display: block;
+  margin: 0 auto;
+}
+.post p {
+  font-size: .8em;
+  
+}
+
+
+}
+
 
 
 
